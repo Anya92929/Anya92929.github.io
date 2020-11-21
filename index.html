@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<title>A simple step-by-step example of our API recommendation</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+
+<head>
+	
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+th {
+    background-color: #990000;
+    color: white;
+}
+
+.tabstyle { display: inline-block; width: 150px; }
+.paragraph {background-color: transparent; color: black; font-family: Arial; font-size: 18pt; font-style: normal; font-variant: normal; font-weight: 400; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;}
+.line {line-height: 1.38; margin-bottom: 0pt; margin-top: 0pt}
+.img {background-color: transparent; color: black; font-family: Arial; font-size: 18pt; font-style: normal; font-variant: normal; font-weight: 400; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;}
+</style>
+
+<!-- <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+</script>
+<script type="text/javascript" async src="./MathJax.js?config=TeX-MML-AM_CHTML"></script> -->
+
+
+<!-- <script>
+  function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+  }
+ 
+  function w3_close() {
+      document.getElementById("mySidebar").style.display = "none";
+      document.getElementById("myOverlay").style.display = "none";
+  }
+</script> -->
+
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+</script>
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+</head>
+
+
+<!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/0.1/MathJax.js?config=TeX-MML-AM_CHTML'></script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+</script> -->
+<body>
+	
+<!-- Sidebar/menu -->
+
+
+
+
+<!-- Header -->
+  
+  <!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-black w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-black w3-margin-right" onclick="w3_open()">☰</a>
+  <span>ICSE rebuttal</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:100px;margin-right:100px">
+  <div class="w3-container" id="Trust Issues: Exploiting TrustZone TEEs" style="margin-top:75px">
+    <h1 class="w3-text-gray"><b>A Simple Step-by-step Example of API Recommendation</b></h1>
+    <h2 class="w3-xlarge w3-text-gray"><i><b>
+        <!-- <a href="https://googleprojectzero.blogspot.com/2017/07/trust-issues-exploiting-trustzone-tees.html" 
+        target="_blank" class="w3-hover-opacity"> 
+            Blog Post Originally From Google Project Zero Blog </a>  -->
+    </b></i></h2>
+    <hr style="width:50px;border:5px solid #990000" class="w3-round">
+
+
+<div dir="ltr" style="line-height: 1.38; margin-bottom: 0pt; margin-top: 0pt;">
+  <span style="background-color: transparent; color: black; font-family: Arial; font-size: 18pt; font-style: normal; font-variant: normal; font-weigth: 400; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">
+    We show a simple step-by-step example of how the multi-path architecture works with the HyLSTM model. 
+  </span>
+</div>
+
+
+<div dir="ltr" style="line-height: 1.38; margin-bottom: 0pt; margin-top: 0pt;">
+  <span style="background-color: transparent; color: black; font-family: Arial; font-size: 18pt; font-style: normal; font-variant: normal; font-weigth: 400; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">
+    The paths extracted from the API dependence graphs look like Figure 1.  
+  </span>
+</div>
+
+<p style="text-align:center;"><img src="materials/paths_from_graphs.png" alt="Extract paths from API dependence graphs" width=100%></p>
+<p style="text-align:center; font-size: 18pt;"><strong>Figure 1. </strong> Extracted paths from API dependence graphs</p>
+<p>&nbsp;</p>
+
+<h6 dir="ltr" style="line-height: 1.38; margin-bottom: 4pt; margin-top: 12pt; font-weight: bold; font-size: 18pt;">
+
+  Step 1: Build Vocabulary.
+</h6>
+
+
+<div dir="ltr" style="line-height: 1.38; margin-bottom: 0pt; margin-top: 0pt;">
+  <span style="background-color: transparent; color: black; font-family: Arial; font-size: 18pt; font-style: normal; font-variant: normal; font-weigth: 400; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">
+    First of all, we collect all the APIs and constants appearing in these paths into a vocabulary.    
+  </span>
+</div>
+
+<p style="text-align:center;"><img src="materials/vocabulary.png" alt="Collect the APIs and constants into a vocabulary" width=50%></p>
+<p style="text-align:center; font-size: 18pt;"><strong>Figure 2. </strong> A vocabulary composed of APIs and constants</p>
+<p>&nbsp;</p>
+
+ 
+<h6 dir="ltr" style="line-height: 1.38; margin-bottom: 4pt; margin-top: 12pt; font-weight: bold; font-size: 18pt;">
+  Step 2: API and constant Embedding.
+</h6>
+
+
+
+<div dir="ltr" style="line-height: 1.38; margin-bottom: 0pt; margin-top: 0pt;">
+  <span style="background-color: transparent; color: black; font-family: Arial; font-size: 18pt; font-style: normal; font-variant: normal; font-weigth: 400; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">
+    We treat each dependence path extracted from the API dependence graph as a sentence in natural langauge. A standard word embedding model skip-gram is applied to train the embedding vector of every token (API and constant) in our vocabulary.     
+  </span>
+</div>
+
+<p style="text-align:center;"><img src="materials/embedding_network.png" alt="API and constant Embedding to get the low-dimensional numeric vector representation for each API or constant" width=100%></p>
+<p style="text-align:center; font-size: 18pt;"><strong>Figure 3. </strong> Skip-gram model to train API and constant embedding from dependence path context</p>
+<p>&nbsp;</p>
+
+
+<div dir="ltr" style="line-height: 1.38; margin-bottom: 0pt; margin-top: 0pt;">
+  <span style="background-color: transparent; color: black; font-family: Arial; font-size: 18pt; font-style: normal; font-variant: normal; font-weigth: 400; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">
+    Now we get the low-dimensional neumeric vector representation for all the tokens as shown in Figure 4. 
+  </span>
+</div>
+
+<p style="text-align:center;"><img src="materials/vocabulary_embedding.png" alt="The low-dimensional numeric vecotr representation for each API or constant" width=60%></p>
+<p style="text-align:center; font-size: 18pt;"><strong>Figure 4. </strong> The low-dimensional numeric vecotr representation for each API or constant</p>
+<p>&nbsp;</p>
+
+<h6 dir="ltr" style="line-height: 1.38; margin-bottom: 4pt; margin-top: 12pt; font-weight: bold; font-size: 18pt;">
+  Step 3: Train sequence model as a building block.
+</h6>
+
+
+<p style="text-align:center;"><img src="materials/sequence_model.png" alt="Pretrain the LSTM/BERT model with all the single paths" width=90%></p>
+<p style="text-align:center;"><strong>Figure 5. </strong>A single path is input into the sequence model to output the next API in use</p>
+<p>&nbsp;</p>
+
+
+<div dir="ltr" style="line-height: 1.38; margin-bottom: 0pt; margin-top: 0pt;">
+  <span style="background-color: transparent; color: black; font-family: Arial; font-size: 18pt; font-style: normal; font-variant: normal; font-weigth: 400; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">
+    As shown in Figure 5, a sequence model (HyLSTM) then accpets the embedding vectors of a sequence of tokens. The output is the classification result on the recommended next token. In the paper, we also experimented with other choices (BERT/LSTM) of sequence models for comparison purpose.         
+  </span>
+</div>
+
+
+<h6 dir="ltr" style="line-height: 1.38; margin-bottom: 4pt; margin-top: 12pt; font-weight: bold; font-size: 18pt;">
+  Step 4: Multi-path selection.
+</h6>
+<div dir="ltr" style="line-height: 1.38; margin-bottom: 0pt; margin-top: 0pt;">
+  <span style="background-color: transparent; color: black; font-family: Arial; font-size: 18pt; font-style: normal; font-variant: normal; font-weigth: 400; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">
+    Instead of relying on a single path, we want to get multiple paths reaching to the same place (red in Figure 6) for API recommendation. We apply multi-path selection for it.    
+  </span>
+</div>
+
+<p style="text-align:center;"><img src="materials/multi_path_selection.png" alt="Select multiple paths" width=70%></p>
+<p style="text-align:center; font-size: 18pt;"><strong>Figure 6. </strong>Select multiple paths reaching to the red highlighted node (to be recommended) as the input</p>
+<p>&nbsp;</p>
+
+<p style="text-align:center;"><img src="materials/multi-path-preparation.png" alt="Pretrain the LSTM/BERT model with all the single paths" width=100%></p>
+<p style="text-align:center; font-size: 18pt;"><strong>Figure 7. </strong>The three paths in Figure 6.</p>
+<p>&nbsp;</p>
+ 
+<h6 dir="ltr" style="line-height: 1.38; margin-bottom: 4pt; margin-top: 12pt; font-weight: bold; font-size: 18pt;">
+  Step 5: Multi-path archetecture for the final API Recommendation.
+</h6>
+
+<div dir="ltr" style="line-height: 1.38; margin-bottom: 0pt; margin-top: 0pt;">
+  <span style="background-color: transparent; color: black; font-family: Arial; font-size: 18pt; font-style: normal; font-variant: normal; font-weigth: 400; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">
+    In the multi-path architecture, the model takes several paths at the same time. Each path is an input for one sequence model identical to Figure 3. The output vectors are aggreated by an standard average pooling layer. The final API recommendation is the classification result from the output vector of the pooling layer.    
+  </span>
+</div>
+
+<p style="text-align:center;"><img src="materials/Multi_path_recommendation.png" alt="Predict the next API under the mutli-path architecture" width=100%></p>
+<p style="text-align:center; font-size: 18pt;"><strong>Figure 8. </strong>API recommendation under the multi-path model architecture.</p>
+<p>&nbsp;</p>
+ 
+
+
+
+
+
+ 
+<!-- W3.CSS Container -->
+
+
+</body>
+
+</html>
